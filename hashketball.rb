@@ -248,7 +248,7 @@ def most_points_scored
   return leading_scorer
 end
 
-#2 variables, one for each team
+#create 2 empty arrays, one for each team
 #iterate down to teams + values
 #conditional to return selected team's stats
 #push to corresponding teams empty array
@@ -273,7 +273,7 @@ def winning_team
       end
     end
   end
-  
+
     if nets.reduce(:+) > hornets.reduce(:+)
       return "Brooklyn Nets"
     else
