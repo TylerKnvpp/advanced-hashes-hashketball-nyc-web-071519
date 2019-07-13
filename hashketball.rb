@@ -120,7 +120,7 @@ def game_hash
   }
 end
 
-#takes in a name of a selected_player
+#takes in the name of a selected_player
 #iterate down to player stats
 #conditional: return player's :points value if == the selected_player
 def num_points_scored(player_name)
@@ -132,7 +132,7 @@ def num_points_scored(player_name)
 end
 
 
-#takes in a name of a selected_player
+#takes in the name of a selected_player
 #iterate down to player stats
 #conditional: return player's :shoe value if == the selected_player
 def shoe_size(player_name)
@@ -151,12 +151,6 @@ def team_colors(selected_team)
       end
     end
 end
-
-# def team_names
-#   game_hash.values.each do |teams|
-#     return teams[:team_name]
-#   end
-# end
 
 def team_names
  game_hash.values.map {|teams| teams[:team_name]}
