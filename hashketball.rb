@@ -273,6 +273,7 @@ def winning_team
       end
     end
   end
+  
     if nets.reduce(:+) > hornets.reduce(:+)
       return "Brooklyn Nets"
     else
