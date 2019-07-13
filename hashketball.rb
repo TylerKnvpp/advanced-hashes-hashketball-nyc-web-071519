@@ -189,7 +189,6 @@ end
 #   game_hash.values.each do |roster|
 #     roster[:players].each do |player|
 #        if player.has_value?(selected_player)
-#       # ???????????
 #         return player.except(:player_name)
 #       end
 #     end
